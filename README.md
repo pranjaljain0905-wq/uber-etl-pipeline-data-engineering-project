@@ -103,7 +103,6 @@ The Power BI dashboard provides insights such as:
 - 🏢 Vendor-wise Trips
 - 📈 Revenue Analysis
 
-> Add a screenshot of your dashboard here:
 > `![Dashboard Preview](images/dashboard.png)`
 
 ---
