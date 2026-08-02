@@ -1,20 +1,61 @@
 # Uber Data Analytics | Modern Data Engineering GCP Project
 
 ## Introduction
+This project demonstrates an end-to-end ETL (Extract, Transform, Load) Data Engineering pipeline using Mage AI. The pipeline extracts Uber trip data, performs data cleaning and transformation using Python, stores the processed data in Azure Blob Storage, loads it into Google BigQuery for analytics, and finally visualizes insights in Looker Studio.
 
-The goal of this project is to perform data analytics on Uber data using various tools and technologies, including GCP Storage, Python, Compute Instance, Mage Data Pipeline Tool, BigQuery, and Looker Studio.
+The project showcases a modern cloud-based data engineering workflow by integrating multiple cloud services and open-source tools.
 
-## Architecture 
-<img src="architecture.jpg">
 
-## Technology Used
-- Programming Language - Python
+## 🏗️ Project Architecture
 
-Google Cloud Platform
-1. Google Storage
-2. Compute Instance 
-3. BigQuery
-4. Looker Studio
+The project follows an end-to-end ETL workflow:
+
+1. Uber trip data is extracted using Mage AI.
+2. Data is cleaned and transformed using Python.
+3. The transformed dataset is stored in Azure Blob Storage.
+4. Data is loaded into Google BigQuery.
+5. Interactive dashboards are created using Power BI.
+                    +------------------+
+                    |   Uber Dataset   |
+                    |   (CSV File)     |
+                    +--------+---------+
+                             |
+                             v
+                 +-----------------------+
+                 |      Mage AI ETL      |
+                 | Extract • Transform   |
+                 |       • Load          |
+                 +-----------+-----------+
+                             |
+                             v
+                 +-----------------------+
+                 | Azure Blob Storage    |
+                 | Processed CSV Storage |
+                 +-----------+-----------+
+                             |
+                             v
+                 +-----------------------+
+                 | Google BigQuery       |
+                 | Data Warehouse        |
+                 +-----------+-----------+
+                             |
+                             v
+                 +-----------------------+
+                 | Power BI Dashboard    |
+                 | Analytics & Reports   |
+                 +-----------------------+
+
+
+| Technology         | Purpose                   |
+| ------------------ | ------------------------- |
+| Python             | Data Processing           |
+| Mage AI            | ETL Pipeline              |
+| Pandas             | Data Cleaning             |
+| Azure Blob Storage | Store Processed Data      |
+| Google BigQuery    | Data Warehouse            |
+| Looker Studio      | Dashboard & Visualization |
+| Git & GitHub       | Version Control           |
+
 
 Modern Data Pipeine Tool - https://www.mage.ai/
 
