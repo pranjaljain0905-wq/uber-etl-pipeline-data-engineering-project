@@ -8,44 +8,15 @@ The project showcases a modern cloud-based data engineering workflow by integrat
 
 ## 🏗️ Project Architecture
 
-The project follows an end-to-end ETL workflow:
+The project follows an ETL pipeline:
 
-1. Uber trip data is extracted using Mage AI.
-2. Data is cleaned and transformed using Python.
-3. The transformed dataset is stored in Azure Blob Storage.
-4. Data is loaded into Google BigQuery.
-5. Interactive dashboards are created using Power BI.
-                    +------------------+
-                    |   Uber Dataset   |
-                    |   (CSV File)     |
-                    +--------+---------+
-                             |
-                             v
-                 +-----------------------+
-                 |      Mage AI ETL      |
-                 | Extract • Transform   |
-                 |       • Load          |
-                 +-----------+-----------+
-                             |
-                             v
-                 +-----------------------+
-                 | Azure Blob Storage    |
-                 | Processed CSV Storage |
-                 +-----------+-----------+
-                             |
-                             v
-                 +-----------------------+
-                 | Google BigQuery       |
-                 | Data Warehouse        |
-                 +-----------+-----------+
-                             |
-                             v
-                 +-----------------------+
-                 | Power BI Dashboard    |
-                 | Analytics & Reports   |
-                 +-----------------------+
+1. Uber trip dataset is used as the input source.
+2. Mage AI extracts, cleans, and transforms the data using Python.
+3. The processed data is stored in Azure Blob Storage.
+4. Power BI connects to Azure Blob Storage to create interactive dashboards and visualizations.
+                   
 
-
+🛠️ Technologies Used
 | Technology         | Purpose                   |
 | ------------------ | ------------------------- |
 | Python             | Data Processing           |
