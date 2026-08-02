@@ -20,7 +20,7 @@ The project follows a modern cloud-based data engineering workflow by integratin
 ---
 
 ## 🏗️ Project Architecture
-
+![Architecture](azure_uber_etl_architecture.png)
 ```
 ┌───────────────────────┐
 │      Uber Dataset      │
